@@ -1,4 +1,11 @@
-import Link from "next/link";
+/**
+ * Author: Marc Millare
+ * Date: 10-22-2026
+ * Description:
+ * -This component acts as the footer for the page.
+ * -Inputs: There are no inputs for this component.
+ * -Output: Footer for the page. It contains address and contact information for the school.
+ */
 
 const Footer = () => {
   return (

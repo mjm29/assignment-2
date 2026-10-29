@@ -12,13 +12,21 @@ import StudentCard from "./StudentCard";
 
 interface StudentListProps {
   list: Student[];
+  onRemove: (id: number) => void;
 }
 
-const StudentList = ({list}:StudentListProps) => {
+const StudentList = ({list, onRemove}: StudentListProps) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 items-center">
       {list.map((student: Student) => (
-        <StudentCard key={student.id} firstName={student.firstName} lastName={student.lastName} average={student.average}/>
+        <StudentCard 
+        key={student.id} 
+        id={student.id}
+        firstName={student.firstName} 
+        lastName={student.lastName} 
+        average={student.average}
+        onRemove={onRemove}
+        />
       ))}
     </div>
   );

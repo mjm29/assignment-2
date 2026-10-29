@@ -11,20 +11,29 @@
  */
 import HonorBadge from "./HonorBadge";
 interface StudentCardProps {
+  id: number;
   firstName: string;
   lastName: string;
   average: number;
+  onRemove: (id: number) => void;
 }
 
-const StudentCard = ({firstName, lastName, average}: StudentCardProps) => {
+const StudentCard = ({id, firstName, lastName, average, onRemove}: StudentCardProps) => {
   return (
     <div className="w-full h-48 relative flex flex-col rounded-lg p-4 bg-gray-500/25 border-t-4 border-r-4 border-gray-700">
-      <p className="text-md font-bold text-white p-4">{firstName} {lastName}</p>
-      <div className="gap-4">  
-        {(average > 80) && <HonorBadge/>}
-        <p className="text-white mt-6 absolute bottom-4 right-4">Grade: {average}</p>
+      <div className="absolute top-4 right-4 flex flex-col items-end gap-2">
+        <p className="text-white">Grade: {average}</p>
+        {(average >= 80) && <HonorBadge/>}
       </div>
-    </div>
+      {/* Student name */}
+      <p className="text-md font-bold text-white p-4">{firstName} {lastName}</p>
+      {/* Remove button: bottom of the card, centered */}
+      <button
+        onClick={() => onRemove(id)}
+        className="mt-auto self-center rounded-lg px-6 py-1 text-white font-medium bg-red-600 border border-red-500 hover:bg-red-600/40">
+        Remove
+      </button>
+    </div> 
   );
 }
 export default StudentCard;

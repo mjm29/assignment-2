@@ -35,9 +35,9 @@ const StudentCard = ({id, firstName, lastName, average, onRemove}: StudentCardPr
       {/* Student name */}
       <p className="text-md font-bold text-white p-4">{firstName} {lastName}</p>
       {/* Buttons for student card*/}
-      <div className="items-center gap-2">
+      <div className="bottom-2 self-center gap-2">
         <button
-          onClick={() => setDetails(true)}
+          onClick={() => setDetails(!details)}
           className="mt-auto rounded-lg px-6 py-1 text-white font-medium bg-blue-600 border border-blue-500 hover:bg-blue-600/40"
         >
           {details ? `Hide Details`: `Show Details`}

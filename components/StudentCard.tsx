@@ -17,23 +17,25 @@ interface StudentCardProps {
   firstName: string;
   lastName: string;
   average: number;
+  grade: number;
   onRemove: (id: number) => void;
 }
 
-const StudentCard = ({id, firstName, lastName, average, onRemove}: StudentCardProps) => {
+const StudentCard = ({id, firstName, lastName, average, grade, onRemove}: StudentCardProps) => {
   const [details, setDetails] = useState(false);
   return (
     <div className="w-full h-48 relative flex flex-col rounded-lg p-4 bg-gray-500/25 border-t-4 border-r-4 border-gray-700">
       <div className="absolute top-4 right-4 flex flex-col items-end gap-2">
         {
           (details) && <p className="text-white">
-          Grade: {average}
+          Average: {average}
           {(average >= 80) && <HonorBadge/>}
           </p>
         }
       </div>
       {/* Student name */}
       <p className="text-md font-bold text-white p-4">{firstName} {lastName}</p>
+      <p className="text-xs text-white p-4">Grade: {grade}</p>
       {/* Buttons for student card*/}
       <div className="bottom-2 self-center gap-2">
         <button

@@ -70,7 +70,7 @@ const StudentPortal = () => {
           <SearchBox value={search} onChange={setSearch}/>
           <button
             onClick={handleClearAll}
-            className="self-start rounded-lg bg-red-600 hover:bg-red-500/40 text-white font-medium px-6 py-2 mt-8">
+            className="self-start rounded-lg bg-red-600 hover:bg-red-500/40 text-white font-medium px-6 py-2 mt-8 cursor-pointer">
             Clear all
           </button>
         </div>

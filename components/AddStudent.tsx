@@ -118,7 +118,7 @@ const AddStudent = ({ onAdd }: AddStudentProps) => {
       </div>
       <button
         onClick={handleAdd}
-        className="self-start rounded-lg bg-blue-500 hover:bg-blue-400 text-white font-medium px-6 py-2"
+        className="self-start rounded-lg bg-blue-500 hover:bg-blue-400 text-white font-medium px-6 py-2 cursor-pointer"
       >
         Add student
       </button>

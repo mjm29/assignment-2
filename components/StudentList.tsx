@@ -25,6 +25,7 @@ const StudentList = ({list, onRemove}: StudentListProps) => {
         firstName={student.firstName} 
         lastName={student.lastName} 
         average={student.average}
+        grade={student.grade}
         onRemove={onRemove}
         />
       ))}

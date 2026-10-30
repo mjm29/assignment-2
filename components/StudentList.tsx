@@ -16,6 +16,11 @@ interface StudentListProps {
 }
 
 const StudentList = ({list, onRemove}: StudentListProps) => {
+  if (list.length == 0) {
+    return(
+      <p className="text-bold text-red-400 px-8">No students found.</p>
+    );
+  }
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 items-center">
       {list.map((student: Student) => (

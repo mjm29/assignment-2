@@ -45,7 +45,7 @@ const StudentPortal = () => {
     const newStudent: Student = { id: newId, firstName, lastName, grade, average };
     setStudents([...students, newStudent]);
   };
- 
+
   // Remove one student by id
   const handleRemove = (id: number) => {
     setStudents(students.filter((student) => student.id !== id));

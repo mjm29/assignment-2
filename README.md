@@ -1,6 +1,9 @@
 Group Members:
 Alexandru Josu - StudentPortal(states), SearchBox, AddStudent, Remove student button and clear all
+
 Marc Millare - StudentPortal(layout, styling), StatsPanel, StudentList, StudentCard, Show Details button
+
+Link to deployed site: https://assignment-2-drab-psi.vercel.app/
 
 | Test                                                                      | Output                                                                                                                               | Result |
 | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------ |

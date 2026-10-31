@@ -17,3 +17,14 @@ Link to deployed site: https://assignment-2-drab-psi.vercel.app/
 | Click clear all.                                                          | No students message shows.                                                                                                           | Pass   |
 | Narrow browser to phone width.                                            | Cards stack into one column, and no sideways scrolling.                                                                              | Pass   |
 | Click each link in the navbar.                                            | The page jumps to clicked section.                                                                                                   | Pass   |
+
+<img width="3838" height="2088" alt="image" src="https://github.com/user-attachments/assets/09e0bd7b-d0a9-4e28-af75-bbad821458a4" />
+
+<img width="2508" height="825" alt="image" src="https://github.com/user-attachments/assets/53ff2073-489d-42c2-bcc1-1655cd890ccc" />
+
+<img width="2126" height="1183" alt="image" src="https://github.com/user-attachments/assets/7d97b542-0c05-417a-a7cf-904e7e05e378" />
+
+<img width="1604" height="571" alt="image" src="https://github.com/user-attachments/assets/da313ab4-4a91-48f5-8eff-dd4b343590a0" />
+
+<img width="1107" height="2103" alt="image" src="https://github.com/user-attachments/assets/268ab265-cb43-4362-a2a9-590bf2b82737" />
+
